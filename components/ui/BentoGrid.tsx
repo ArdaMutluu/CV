@@ -113,35 +113,34 @@ export const BentoGridItem = ({
           {/* for the github 3d globe */}
           {id === 2 && <GridGlobe />}
 
-          {/* Tech stack list div */}
-          {id === 3 && (
-            <div className="flex gap-4 lg:gap-4 w-fit absolute -right-2 lg:-right-1 lg:-top-3">
-              <div className="mt-4 flex flex-col gap-3 md:gap-3 lg:gap-6">
-                {leftLists.map((item, i) => (
-                  <span
-                    key={i}
-                    className="lg:mt-3 lg:py-4 lg:px-4 py-2 px-3 text-xs lg:text-base opacity-50 
-                    lg:opacity-100 rounded-lg text-center bg-[#10132E]"
-                  >
-                    {item}
-                  </span>
-                ))}
-                <span className="lg:py-4 lg:px-3 py-4 px-3  rounded-lg text-center  bg-[#10132E]"></span>
-              </div>
-              <div className="-mt-7 flex flex-col gap-3 md:gap-4 lg:gap-8">
-                <span className="lg:py-4 lg:px-3 py-4 px-3  rounded-lg text-center bg-[#10132E]"></span>
-                {rightLists.map((item, i) => (
-                  <span
-                    key={i}
-                    className="lg:my-1 lg:py-3 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
-                    lg:opacity-100 rounded-lg text-center bg-[#10132E]"
-                  >
-                    {item}
-                  </span>
-                ))}
-              </div>
-            </div>
-          )}
+         { id === 3 && (
+  <div className="grid grid-cols-2 gap-4 p-4 w-full max-w-md mx-auto">
+    {/* Left List */}
+    <div className="flex flex-col gap-3">
+      {leftLists.map((item, i) => (
+        <span
+          key={i}
+          className="py-2 px-3 text-sm lg:text-base text-center bg-[#10132E] text-white rounded-lg"
+        >
+          {item}
+        </span>
+      ))}
+    </div>
+
+    {/* Right List */}
+    <div className="flex flex-col gap-3">
+      {rightLists.map((item, i) => (
+        <span
+          key={i}
+          className="py-2 px-3 text-sm lg:text-base text-center bg-[#10132E] text-white rounded-lg"
+        >
+          {item}
+        </span>
+      ))}
+    </div>
+  </div>
+)}
+
           {id === 6 && (
             <div className="mt-5 relative">
               <div
