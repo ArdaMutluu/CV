@@ -82,7 +82,7 @@ export const projects = [
   {
     id: 2,
     title: "TextLens",
-    desc: "A website for analyze your docuemnt and analyze it for how many words , most used words etc. With JS,HTML,CSS, BOOTSRAP",
+    desc: "A website for analyze your docuemnt and analyze it for how many words , most used words etc. With JS,HTML,CSS, BOOTSTRAP",
     thumbnail: "/exp2.jpg",
   },
   {
